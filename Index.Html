@@ -1,59 +1,106 @@
-﻿<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coronado Cordova Rene Alejandro · Portafolio</title>
-  </head>
+﻿<!DOCTYPE html> 
+<html lang="es"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Coronado Cordova Rene Alejandro · Portafolio</title> 
+  </head> 
+ 
+  <body> 
 
-  <body>
-    <header>
-      <p>RC</p>
-      <h1>Coronado Cordova Rene Alejandro</h1>
-      <p>Estudiante de Desarrollo de Software Multiplataforma · UTH</p>
-      <p>DSM 3-1</p>
-      <p>PENDIENTE - ESCRIBIR MATRÍCULA</p>
-      <p>
-        Soy estudiante de Desarrollo de Software Multiplataforma y me interesa
-        aprender sobre el desarrollo de aplicaciones web. Me gustaría crear
-        proyectos funcionales que me permitan mejorar mis habilidades de
-        programación y diseño web.
-      </p>
+    <header> 
+      <p>RC</p> 
+      <h1>Coronado Cordova Rene Alejandro</h1> 
+      <p>Estudiante de Desarrollo de Software Multiplataforma · UTH</p> 
+      <p>DSM 3-1</p> 
+      <p>PENDIENTE - ESCRIBIR MATRÍCULA</p> 
 
-      <nav>
-        <ul>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+      <p> 
+        Soy estudiante de Desarrollo de Software Multiplataforma y me interesa 
+        aprender sobre el desarrollo de aplicaciones web. Me gustaría crear 
+        proyectos funcionales que me permitan mejorar mis habilidades de 
+        programación y diseño web. 
+      </p> 
+ 
+      <nav> 
+        <ul> 
+          <li><a href="#sobre-mi">Sobre mí</a></li> 
+          <li><a href="#skills">Skills</a></li> 
+          <li><a href="#contacto">Contacto</a></li> 
+        </ul> 
+      </nav> 
+    </header> 
+ 
+    <main> 
 
-    <main>
-      <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>
-          Soy estudiante de Desarrollo de Software Multiplataforma con interés en
-          crear soluciones digitales útiles y bien diseñadas.
-        </p>
-      </section>
+      <section id="sobre-mi"> 
+        <h2>Sobre mí</h2> 
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Diseño web</li>
-          <li>Programación</li>
-        </ul>
-      </section>
+        <p> 
+          Soy estudiante de Desarrollo de Software Multiplataforma con interés en 
+          crear soluciones digitales útiles y bien diseñadas. 
+        </p> 
+      </section> 
+ 
+      <section id="skills"> 
+        <h2>Skills</h2> 
+
+        <ul> 
+          <li>HTML</li> 
+          <li>CSS</li> 
+          <li>JavaScript</li> 
+          <li>Diseño web</li> 
+          <li>Programación</li> 
+        </ul> 
+      </section> 
+
     </main>
 
-    <footer id="contacto">
-      <h2>Contacto</h2>
-      <p>Correo: pendiente@correo.com</p>
-      <p>GitHub: @usuario</p>
-    </footer>
-  </body>
+    <!-- Formulario de contacto -->
+    <!-- Está después del main y antes del footer -->
+    <section id="contacto">
+
+      <h2>Formulario de contacto</h2>
+
+      <form>
+
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input 
+            type="text" 
+            id="nombre" 
+            name="nombre" 
+            required>
+        </p>
+
+        <p>
+          <label for="correo">Correo electrónico:</label>
+          <input 
+            type="email" 
+            id="correo" 
+            name="correo" 
+            required>
+        </p>
+
+        <p>
+          <label for="mensaje">Mensaje:</label>
+          <textarea 
+            id="mensaje" 
+            name="mensaje" 
+            required></textarea>
+        </p>
+
+        <button type="submit">Enviar</button>
+
+      </form>
+
+    </section>
+
+    <footer> 
+      <h2>Contacto</h2> 
+      <p>Correo: pendiente@correo.com</p> 
+      <p>GitHub: @usuario</p> 
+    </footer> 
+
+  </body> 
 </html>
