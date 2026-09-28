@@ -1,106 +1,72 @@
-﻿<!DOCTYPE html> 
-<html lang="es"> 
-  <head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Coronado Cordova Rene Alejandro · Portafolio</title> 
-  </head> 
- 
-  <body> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Rene Alejandro Coronado Cordova - Aplicaciones Web" />
+  <title>Rene Coronado | Portafolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#inicio"><span class="brand-mark">RC</span><span><b>Rene Coronado</b><small>Portafolio | Aplicaciones Web</small></span></a>
+      <nav><a href="#sobre-mi">Sobre mí</a><a href="#stack">Stack</a><a href="#proyecto">Proyecto</a><a href="#entregas">Entregas</a><a href="#contacto">Contacto</a></nav>
+    </div>
+  </header>
 
-    <header> 
-      <p>RC</p> 
-      <h1>Coronado Cordova Rene Alejandro</h1> 
-      <p>Estudiante de Desarrollo de Software Multiplataforma · UTH</p> 
-      <p>DSM 3-1</p> 
-      <p>PENDIENTE - ESCRIBIR MATRÍCULA</p> 
-
-      <p> 
-        Soy estudiante de Desarrollo de Software Multiplataforma y me interesa 
-        aprender sobre el desarrollo de aplicaciones web. Me gustaría crear 
-        proyectos funcionales que me permitan mejorar mis habilidades de 
-        programación y diseño web. 
-      </p> 
- 
-      <nav> 
-        <ul> 
-          <li><a href="#sobre-mi">Sobre mí</a></li> 
-          <li><a href="#skills">Skills</a></li> 
-          <li><a href="#contacto">Contacto</a></li> 
-        </ul> 
-      </nav> 
-    </header> 
- 
-    <main> 
-
-      <section id="sobre-mi"> 
-        <h2>Sobre mí</h2> 
-
-        <p> 
-          Soy estudiante de Desarrollo de Software Multiplataforma con interés en 
-          crear soluciones digitales útiles y bien diseñadas. 
-        </p> 
-      </section> 
- 
-      <section id="skills"> 
-        <h2>Skills</h2> 
-
-        <ul> 
-          <li>HTML</li> 
-          <li>CSS</li> 
-          <li>JavaScript</li> 
-          <li>Diseño web</li> 
-          <li>Programación</li> 
-        </ul> 
-      </section> 
-
-    </main>
-
-    <!-- Formulario de contacto -->
-    <!-- Está después del main y antes del footer -->
-    <section id="contacto">
-
-      <h2>Formulario de contacto</h2>
-
-      <form>
-
-        <p>
-          <label for="nombre">Nombre:</label>
-          <input 
-            type="text" 
-            id="nombre" 
-            name="nombre" 
-            required>
-        </p>
-
-        <p>
-          <label for="correo">Correo electrónico:</label>
-          <input 
-            type="email" 
-            id="correo" 
-            name="correo" 
-            required>
-        </p>
-
-        <p>
-          <label for="mensaje">Mensaje:</label>
-          <textarea 
-            id="mensaje" 
-            name="mensaje" 
-            required></textarea>
-        </p>
-
-        <button type="submit">Enviar</button>
-
-      </form>
-
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <img class="profile" src="assets/foto-rene.png" alt="Foto de Rene Alejandro Coronado Cordova" />
+        <div class="hero-copy">
+          <p class="eyebrow">PORTAFOLIO · APLICACIONES WEB</p>
+          <h1>Coronado Cordova Rene Alejandro</h1>
+          <p class="meta">Matrícula: <b>25311018</b> · Grupo: <b>DSM 4-1</b></p>
+          <p class="lead">Soy estudiante de Desarrollo de Software Multiplataforma. Me interesa el desarrollo web y la creación de aplicaciones funcionales con interfaces claras, bases de datos y servicios publicados en la nube.</p>
+          <div class="actions">
+            <a class="btn light" href="https://github.com/coronadocordovar-png" target="_blank" rel="noopener">◉ Ver GitHub</a>
+            <a class="btn primary" href="#entregas">Ver mis entregas →</a>
+          </div>
+        </div>
+        <div class="hero-card"><div class="code-icon">&lt;/&gt;</div><div><b>Desarrollo Web</b><span>Ideas, código y proyectos</span></div></div>
+      </div>
     </section>
 
-    <footer> 
-      <h2>Contacto</h2> 
-      <p>Correo: pendiente@correo.com</p> 
-      <p>GitHub: @usuario</p> 
-    </footer> 
+    <section id="sobre-mi" class="section light-section">
+      <div class="container split">
+        <article class="info-card"><div class="icon">●</div><div><p class="eyebrow purple">SOBRE MÍ</p><h2>Un poco más de contexto</h2><p>Actualmente estudio Desarrollo de Software Multiplataforma. En la materia de Aplicaciones Web he trabajado con HTML, Tailwind CSS, Django, MySQL y Render. Mi objetivo es seguir mejorando mis habilidades de programación y crear proyectos web completos que puedan publicarse y utilizarse desde distintos dispositivos.</p></div></article>
+        <article id="stack" class="info-card"><div class="icon">⚙</div><div><p class="eyebrow purple">STACK</p><h2>Tecnologías que he usado</h2><div class="chips"><span>HTML5</span><span>Tailwind CSS</span><span>Django (Python)</span><span>MySQL</span><span>Render</span><span>Git + GitHub</span></div></div></article>
+      </div>
+    </section>
 
-  </body> 
+    <section id="entregas" class="section dark-section">
+      <div class="container">
+        <p class="eyebrow">EVIDENCIA POR UNIDAD</p><h2>Mis entregas publicadas</h2>
+        <p class="section-intro">Aquí se muestran las evidencias realizadas durante el curso. Las unidades que todavía no se han trabajado permanecen marcadas como pendientes.</p>
+        <div class="deliveries">
+          <article class="delivery"><span class="unit u1">UNIDAD 1</span><h3>Portafolio estático (HTML + Tailwind)</h3><div class="actions small"><a class="btn outline" href="https://github.com/coronadocordovar-png/Portafolio_CCR" target="_blank" rel="noopener">Ver en GitHub</a></div></article>
+          <article class="delivery"><span class="unit u2">UNIDAD 2</span><h3>App Django + MySQL en Render</h3><div class="actions small"><a class="btn outline" href="https://github.com/coronadocordovar-png/mi_proyecto_django_aivenCCR" target="_blank" rel="noopener">Ver en GitHub</a><a class="btn primary" href="https://ine-personal-rcc.onrender.com/" target="_blank" rel="noopener">Ver en Render</a></div></article>
+          <article class="delivery"><span class="unit u3">UNIDAD 3</span><h3>CRUD dinámico con login y sesiones</h3><p class="pending">Pendiente</p></article>
+          <article class="delivery"><span class="unit u4">UNIDAD 4</span><h3>Proyecto integrador final</h3><p class="pending">Pendiente</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyecto" class="section project-section">
+      <div class="container project-grid">
+        <div>
+          <p class="eyebrow purple">PROYECTO INTEGRADOR</p><h2>Fit Manager</h2>
+          <p>Fit Manager es un sistema administrativo orientado a mejorar la organización del gimnasio Buck Fitness. Permitirá administrar clientes, rutinas de gimnasio y boxeo, pagos, membresías, entrenadores y reportes administrativos.</p>
+          <div class="features"><span>👥 Gestión de clientes</span><span>💳 Control de membresías</span><span>💰 Registro de pagos</span><span>🏋️ Rutinas de gimnasio y boxeo</span><span>📊 Reportes administrativos</span></div>
+        </div>
+        <div class="fit-card"><img src="assets/fit-manager.png" alt="Logo de Fit Manager" /><div><h3>Fit Manager</h3><p>Sistema administrativo para Buck Fitness</p></div></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section"><div class="container contact"><div><p class="eyebrow purple">CONTACTO</p><h2>Hablemos</h2></div><a class="mail" href="mailto:coronadocordovar@gmail.com">✉ coronadocordovar@gmail.com</a><a class="github-contact" href="https://github.com/coronadocordovar-png" target="_blank" rel="noopener">GitHub: coronadocordovar-png</a></div></section>
+  </main>
+
+  <footer><div class="container footer"><span>© 2026 Coronado Cordova Rene Alejandro. Todos los derechos reservados.</span><span>Aplicaciones Web · Docente: Bernardo Prado Díaz</span></div></footer>
+</body>
 </html>
